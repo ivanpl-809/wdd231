@@ -72,7 +72,6 @@ section {
 }
 
 .card {
-    display: box;
     text-align: center;
     width: 100%;
     margin: 5px;
@@ -145,4 +144,4 @@ button:hover {
   img{
     max-width: 50%;
     max-height: 50%;
-};
+}
