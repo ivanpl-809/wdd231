@@ -10,7 +10,7 @@ document.getElementById('hamburger-menu').addEventListener('click', function () 
     document.getElementById('navbar').classList.toggle('show');
 });
 
-// Set current date and time in hidden field
+// Set timestamp
 const currentDateField = document.getElementById('currentdate');
 currentDateField.value = new Date().toLocaleString();
 
@@ -35,7 +35,7 @@ closeButtons.forEach(button => {
     });
 });
 
-// Parse URL parameters and display form data on thankyou.html
+// Display form data on thankyou.html
 if (window.location.pathname.includes('thankyou.html')) {
     const urlParams = new URLSearchParams(window.location.search);
     document.getElementById('fname').textContent = urlParams.get('fname');

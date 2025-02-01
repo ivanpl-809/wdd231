@@ -136,12 +136,21 @@ footer a img:hover {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .join {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .myinput, .myradio {
@@ -150,7 +159,7 @@ footer a img:hover {
 }
 
 .myinput input, .myinput textarea {
-    width: 100%;
+    width: 96%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -168,6 +177,8 @@ footer a img:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+    font-size: 16px;
 }
 
 .mysubmit:hover {
@@ -187,6 +198,10 @@ footer a img:hover {
     text-align: center;
     border-radius: 10px;
     background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 .card h3 {
@@ -231,21 +246,52 @@ footer a img:hover {
     font-weight: bold;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.card {
-    animation: fadeIn 1s ease-in-out;
+
+.join-confirm {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-    .join-main {
-        flex-direction: column;
-    }
+.join-confirm table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
-    .membership-cards {
-        grid-template-columns: 1fr;
-    }
+.join-confirm table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.join-confirm table td:first-child {
+    font-weight: bold;
+    width: 40%;
+}
+
+.join-confirm table td:last-child {
+    width: 60%;
+}
+
+.join-confirm table tr:last-child td {
+    border-bottom: none;
+}
+.thankyou{
+    margin: 10px;
 }
