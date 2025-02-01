@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbuktu Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description"
+        content="This website will serve as a resource hub for businesses in the city of Timbuktu. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses.">
+    <meta name="author" content="Ivan Ponce">
+    <meta property="og:title" content="Chamber Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/ivanpl-809/wdd231/tree/main/images/favicon.ico">
+    <meta property="og:url" content="https://ivanpl-809.github.io/wdd231/chamber/join.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <a id="logo_link" href="index.html">
+                <img src="images/timbuktu.png" alt="Chamber Logo" class="logo" />
+            </a>
+            <div>
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav  class="header-right" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="#discover">Discover</a>
+
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <section class="join">
+            <div>
+                <h2>Membership Levels Benefits</h2>
+                <h3>NP Membership</h3>
+                <ul>
+                    <li>For non profit organizations and there is no fee</li>
+                </ul>
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>15% discount on events</li>
+                    <li>10% discount on advertising</li>
+                    <li>Fee of $50/month</li>
+                </ul>
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>25% discount on events</li>
+                    <li>15% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>Fee of $100/month</li>
+                </ul>
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>50% discount on events</li>
+                    <li>50% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>5 free featured ads per year</li>
+                    <li>1 free training per quarter</li>
+                    <li>Fee of $250/month</li>
+                </ul>
+            </div>
+            <div>
+                <form method="GET" action="thankyou.html">
+                    <label class="myinput">First Name*<input type="text" name="fname" required maxlength="20" autocomplete="given-name" title="Enter your first name"></label>
+                    <label class="myinput">Last Name*<input type="text" name="lname" required maxlength="20" autocomplete="family-name" title="Enter your last name"></label>
+                    <label class="myinput">Title<input type="text" name="title" autocomplete="organization-title" title="Enter your organizational title"></label>
+                    <label class="myinput">Email*<input type="email" name="email" required autocomplete="email" title="Enter your email address" placeholder="example@domain.com"></label>
+                    <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required placeholder="208-458-1234" pattern="\d{3}-\d{3}-\d{4}" autocomplete="tel" title="Enter your mobile phone number"></label>
+                    <label class="myinput">Business Name*<input type="text" name="bizname" required maxlength="40" autocomplete="organization" title="Enter your business or organization name"></label>
+                    <label class="myinput">Website URL<input type="text" name="websiteURL"></label>
+                    <h3>Membership Level</h3>
+                    <label class="myradio"><input type="radio" name="level" value="nonprofit" required>Non-Profit</label>
+                    <label class="myradio"><input type="radio" name="level" value="bronze" required>Bronze</label>
+                    <label class="myradio"><input type="radio" name="level" value="silver" required>Silver</label>
+                    <label class="myradio"><input type="radio" name="level" value="gold" required>Gold</label>
+                    <label class="myinput">Business Description<textarea name="description" cols="40" rows="5"></textarea></label>
+                    <label><input id="currentdate" type="hidden" name="currentdate" value=""></label>
+                    <input class="mysubmit" type="submit" value="Join the Chamber!">
+                </form>
+            </div>
+        </section>
+
+        <section class="membership-cards">
+            <div class="card" id="np-card">
+                <h3>NP Membership</h3>
+                <p>For non-profit organizations</p>
+                <a href="#np-modal" class="modal-link">Learn More</a>
+            </div>
+            <div class="card" id="bronze-card">
+                <h3>Bronze Membership</h3>
+                <p>Basic benefits for small businesses</p>
+                <a href="#bronze-modal" class="modal-link">Learn More</a>
+            </div>
+            <div class="card" id="silver-card">
+                <h3>Silver Membership</h3>
+                <p>Enhanced benefits for growing businesses</p>
+                <a href="#silver-modal" class="modal-link">Learn More</a>
+            </div>
+            <div class="card" id="gold-card">
+                <h3>Gold Membership</h3>
+                <p>Premium benefits for established businesses</p>
+                <a href="#gold-modal" class="modal-link">Learn More</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div id="np-modal" class="modal">
+        <div class="modal-content">
+            <h3>NP Membership Benefits</h3>
+            <ul>
+                <li>For non-profit organizations and there is no fee</li>
+            </ul>
+            <a href="#" class="close-modal">Close</a>
+        </div>
+    </div>
+
+    <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+            <h3>Bronze Membership Benefits</h3>
+            <ul>
+                <li>15% discount on events</li>
+                <li>10% discount on advertising</li>
+                <li>Fee of $50/month</li>
+            </ul>
+            <a href="#" class="close-modal">Close</a>
+        </div>
+    </div>
+
+    <div id="silver-modal" class="modal">
+        <div class="modal-content">
+            <h3>Silver Membership Benefits</h3>
+            <ul>
+                <li>25% discount on events</li>
+                <li>15% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>Fee of $100/month</li>
+            </ul>
+            <a href="#" class="close-modal">Close</a>
+        </div>
+    </div>
+
+    <div id="gold-modal" class="modal">
+        <div class="modal-content">
+            <h3>Gold Membership Benefits</h3>
+            <ul>
+                <li>50% discount on events</li>
+                <li>50% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>5 free featured ads per year</li>
+                <li>1 free training per quarter</li>
+                <li>Fee of $250/month</li>
+            </ul>
+            <a href="#" class="close-modal">Close</a>
+        </div>
+    </div>
+  
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Timbuktu Chamber of Commerce</h3>
+                <p>10 Rue De La Paix</p>
+                <p>Timbuktu, Mali 999</p>
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-2330</p>
+            </div>
+            <div class="social">
+                <a href="https://youtube.com">
+                    <img src="images/youtube.png" alt="Facebook icon" class="">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter icon">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="images/linkedin.png" alt="Instagram icon">
+                </a>
+            </div>
+            <div class="footer-right">
+                <p>WDD231 Class Project</p>
+                <p>Ivan Ponce</p>
+                <p>&copy; <span id="currentYear"></span> Timbuktu Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
