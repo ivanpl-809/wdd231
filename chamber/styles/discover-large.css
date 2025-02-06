@@ -1,6 +1,7 @@
 @media (min-width: 641px) {
     .discover-grid {
         grid-template-columns: repeat(2, 1fr);
+    
     }
 }
 
@@ -8,4 +9,44 @@
     .discover-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+    
 }
+
+@media (max-width: 768px) {
+    header {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .header-title {
+        display: flex;
+        color: white;
+        justify-content: center;
+    }
+
+    nav {
+        background-color: #4a6785;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        margin: 37.5px;
+    }
+
+    #navbar.show {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 18px;
+
+    }
+    }
