@@ -1,0 +1,42 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFF8DC;
+    color: #8B4513;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #8B4513;
+  }
+  
+  a {
+    color: #F4A460;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+  header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #F4A460;
+    color: #FFFFFF;
+  }
+  
+
+  section {
+    margin-bottom: 30px;
+  }
+  
+
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #8B4513;
+    color: #FFFFFF;
+  }
