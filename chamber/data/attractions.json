@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Timbuktu Market",
+        "image": "images/market.webp",
+        "address": "123 Market St, Timbuktu",
+        "description": "A bustling marketplace offering local crafts, food, and goods."
+    },
+    {
+        "title": "Great Mosque",
+        "image": "images/mosque.webp",
+        "address": "456 Mosque Rd, Timbuktu",
+        "description": "An ancient mosque showcasing stunning architecture and history."
+    },
+    {
+        "title": "Desert Oasis",
+        "image": "images/oasis.webp",
+        "address": "789 Oasis Ln, Timbuktu",
+        "description": "A serene oasis perfect for relaxation and nature lovers."
+    },
+    {
+        "title": "Cultural Museum",
+        "image": "images/museum.webp",
+        "address": "321 Museum Ave, Timbuktu",
+        "description": "Explore the rich history and culture of Timbuktu."
+    },
+    {
+        "title": "Library of Timbuktu",
+        "image": "images/library.webp",
+        "address": "654 Library Blvd, Timbuktu",
+        "description": "Home to ancient manuscripts and historical documents."
+    },
+    {
+        "title": "Festival Square",
+        "image": "images/festival.webp",
+        "address": "987 Festival Sq, Timbuktu",
+        "description": "A vibrant square hosting cultural festivals and events."
+    },
+    {
+        "title": "River Niger View",
+        "image": "images/river.webp",
+        "address": "135 River Dr, Timbuktu",
+        "description": "Enjoy breathtaking views of the River Niger."
+    },
+    {
+        "title": "Artisan Village",
+        "image": "images/artisan.webp",
+        "address": "246 Artisan Rd, Timbuktu",
+        "description": "Discover handmade crafts and meet local artisans."
+    }
+]

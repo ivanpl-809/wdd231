@@ -27,3 +27,27 @@ if (!lastVisit) {
 }
 
 localStorage.setItem('lastVisit', currentVisit);
+
+const discoverGrid = document.getElementById('discover-grid');
+
+fetch('data/attractions.json')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(attraction => {
+            const card = document.createElement('div');
+            card.classList.add('card');
+
+            card.innerHTML = `
+                <h2>${attraction.title}</h2>
+                <figure>
+                    <img src="${attraction.image}" alt="${attraction.title}" loading="lazy">
+                </figure>
+                <address>${attraction.address}</address>
+                <p>${attraction.description}</p>
+                <button>Learn More</button>
+            `;
+
+            discoverGrid.appendChild(card);
+        });
+    })
+    .catch(error => console.error('Error fetching JSON data:', error));
