@@ -11,7 +11,7 @@
         font-size: 1.5rem;
     }
 
-    .dish-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .story-container {
+        flex-direction: row;
     }
 }
