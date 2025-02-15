@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+    .reservation form {
+        max-width: 600px;
+    }
+
+    .reservation button {
+        width: auto;
+    }
+}

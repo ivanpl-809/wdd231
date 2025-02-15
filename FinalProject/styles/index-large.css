@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+    .hero-content h2 {
+        font-size: 4rem;
+    }
+
+    .hero-content p {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        font-size: 1.5rem;
+    }
+
+    .dish-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

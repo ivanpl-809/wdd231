@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - El Santo - Bistro & Salads</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description"
+        content="Make a reservation at El Santo - Bistro & Salads. Book your table now for a delightful dining experience.">
+    <meta name="author" content="Ivan Ponce">
+    <meta property="og:title" content="Reservation - El Santo - Bistro & Salads">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/ivanpl-809/wdd231/tree/main/images/favicon.ico">
+    <meta property="og:url" content="https://ivanpl-809.github.io/wdd231/restaurant/reservation.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/reservation.css">
+    <link rel="stylesheet" href="styles/reservation-large.css">
+    <script src="scripts/restaurant.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <a id="logo_link" href="index.html">
+                <img src="images/el-santo-logo.png" alt="El Santo Logo" class="logo" />
+            </a>
+            <div>
+                <h1>El Santo</h1>
+                <p>Bistro & Salads</p>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav class="header-right" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="location.html">Location & Hours</a>
+            <a href="reservation.html">Reservation</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservation">
+            <h2>Make a Reservation</h2>
+            <form action="thankyou.html" method="GET">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>El Santo - Bistro & Salads</h3>
+                <p>123 Main St, Timbuktu</p>
+                <p>Phone: (223) 555-1234</p>
+                <p>Email: info@elsanto.com</p>
+            </div>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="Facebook icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="Instagram icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter icon">
+                </a>
+            </div>
+            <div class="footer-right">
+                <p>&copy; <span id="currentYear"></span> El Santo - Bistro & Salads</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
