@@ -11,23 +11,33 @@ body {
     background-color: #f9f9f9;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #11270b;
+    background-color: #336342ec;
     color: white;
     padding: 20px;
 }
 
-header h1 {
-    font-size: 2rem;
-    color: #598b2c;
+header-left {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
 }
 
-header p {
-    font-size: 1.2rem;
+.header-left h1 {
+    font-size: 2rem;
+    color: #598b2c;
+    margin: 0; 
 }
+
+.header-left p {
+    font-size: 1.2rem;
+    margin: 0; 
+}
+
 
 nav a {
     color: white;
@@ -42,20 +52,29 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('images/hero-bg.webp') no-repeat center center/cover;
+    position: relative;
     height: 400px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    position: relative;
-}
-
-.hero-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
 }
 
 .hero-content h2 {
@@ -70,7 +89,7 @@ nav a:hover {
 }
 
 .cta-button {
-    background-color: #598b2c;
+    background-color: #336342ec;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -138,7 +157,7 @@ nav a:hover {
 
 footer {
     padding: 20px;
-    background-color: #598b2c;
+    background-color: #336342ec;
     color: white;
 }
 
@@ -173,4 +192,10 @@ footer a img:hover {
     text-align: right;
     font-size: 0.9rem;
     margin-bottom: 5px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin: 20px;
 }

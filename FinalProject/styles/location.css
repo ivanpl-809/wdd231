@@ -8,19 +8,21 @@
 body {
     max-width: 1400px;
     margin: auto;
+    background-color: #f9f9f9;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2C3E50;
+    background-color: #11270b;
     color: white;
     padding: 20px;
 }
 
 header h1 {
     font-size: 2rem;
+    color: #598b2c;
 }
 
 header p {
@@ -35,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #f1c40f;
+    color: #598b2c;
 }
 
 /* Location Section */
@@ -51,6 +53,15 @@ nav a:hover {
 .location-info p {
     font-size: 1.1rem;
     margin: 10px 0;
+}
+
+.map {
+    margin: 20px 0;
+}
+
+.map iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hours h3 {
@@ -74,10 +85,9 @@ nav a:hover {
         transform: translateY(0);
     }
 }
-
 footer {
     padding: 20px;
-    background-color: #2C3E50;
+    background-color: #336342ec;
     color: white;
 }
 
@@ -112,4 +122,10 @@ footer a img:hover {
     text-align: right;
     font-size: 0.9rem;
     margin-bottom: 5px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin: 20px;
 }

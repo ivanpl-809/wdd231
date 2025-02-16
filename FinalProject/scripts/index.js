@@ -1,5 +1,5 @@
-// Hamburger Menu Toggle
-document.getElementById('hamburger-menu').addEventListener('click', function () {
+// Hamburger Toggle
+document.getElementById('hamburger-menu').addEventListener('click', function() {
     document.getElementById('navbar').classList.toggle('show');
 });
 
