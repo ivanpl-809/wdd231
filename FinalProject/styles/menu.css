@@ -11,33 +11,70 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #11270b;
+    background-color: #336342ec;
     color: white;
     padding: 20px;
+    height: 80px;
+    position: relative;
+    z-index: 1000;
 }
 
-header h1 {
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-left .logo {
+    width: 70px;
+    height: auto;
+}
+
+.header-left h1 {
     font-size: 2rem;
-    color: #598b2c;
+    color: #ffffff;
+    margin: 0;
 }
 
-header p {
+.header-left p {
     font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-size: 1.1rem;
 }
 
 nav a:hover {
-    color: #598b2c;
+    color: #000000;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-menu .bar {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 /* Menu Section */
@@ -113,18 +150,7 @@ nav a:hover {
     margin: 5px 0;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
+/* Footer Styles */
 footer {
     padding: 20px;
     background-color: #336342ec;
@@ -155,7 +181,7 @@ footer a img {
 }
 
 footer a img:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 .footer-right p {
@@ -164,8 +190,28 @@ footer a img:hover {
     margin-bottom: 5px;
 }
 
-.logo {
-    width: 50px;
-    height: auto;
-    margin: 20px;
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #navbar.show {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #336342ec;
+        padding: 20px;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
 }

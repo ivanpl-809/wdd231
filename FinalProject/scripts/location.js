@@ -1,7 +1,12 @@
-// Hamburger Menu Toggle
-document.getElementById('hamburger-menu').addEventListener('click', function () {
-    document.getElementById('navbar').classList.toggle('show');
-});
+// Hamburger Toggle
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const navbar = document.getElementById('navbar');
+
+if (hamburgerMenu && navbar) {
+    hamburgerMenu.addEventListener('click', function () {
+        navbar.classList.toggle('show');
+    });
+}
 
 // Current Year and Last Modified
 const currentYear = new Date().getFullYear();

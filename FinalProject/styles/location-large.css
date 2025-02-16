@@ -1,10 +1,4 @@
 @media (min-width: 768px) {
-    .location {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .map iframe {
         width: 80%;
     }
