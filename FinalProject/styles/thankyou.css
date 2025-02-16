@@ -77,33 +77,27 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Reservation Section */
-.reservation {
+/* Thank You Section */
+.thankyou {
     padding: 40px 20px;
     text-align: center;
 }
 
-.reservation form {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: left;
+.reservation-details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.reservation label {
-    display: block;
-    margin: 10px 0 5px;
+.reservation-details p {
     font-size: 1.1rem;
+    margin: 10px 0;
 }
 
-.reservation input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.reservation button {
+.cta-button {
     background-color: #336342ec;
     color: white;
     padding: 10px 20px;
@@ -111,10 +105,10 @@ nav a:hover {
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
-    width: 100%;
+    margin-top: 20px;
 }
 
-.reservation button:hover {
+.cta-button:hover {
     background-color: #11270b;
 }
 

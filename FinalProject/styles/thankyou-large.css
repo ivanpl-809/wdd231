@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+    .thankyou {
+        padding: 60px 20px;
+    }
+
+    .reservation-details {
+        padding: 30px;
+    }
+
+    .reservation-details p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        font-size: 1.5rem;
+    }
+}
