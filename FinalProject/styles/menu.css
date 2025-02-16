@@ -10,7 +10,6 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -45,7 +44,6 @@ header {
     margin: 0;
 }
 
-/* Navigation Bar Styles */
 nav {
     display: flex;
     gap: 20px;
@@ -61,7 +59,6 @@ nav a:hover {
     color: #000000;
 }
 
-/* Hamburger Menu Styles */
 .hamburger-menu {
     display: none;
     cursor: pointer;
@@ -76,7 +73,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Menu Section */
 .menu {
     padding: 40px 20px;
     text-align: center;
@@ -140,7 +136,6 @@ nav a:hover {
 }
 
 
-/* Footer Styles */
 footer {
     padding: 20px;
     background-color: #336342ec;
@@ -180,7 +175,6 @@ footer a img:hover {
     margin-bottom: 5px;
 }
 
-/* Responsive Styles for Small Screens */
 @media (max-width: 768px) {
     .hamburger-menu {
         display: flex;

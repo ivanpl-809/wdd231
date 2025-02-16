@@ -1,4 +1,3 @@
-// Hamburger Toggle
 const hamburgerMenu = document.getElementById('hamburger-menu');
 const navbar = document.getElementById('navbar');
 
@@ -8,14 +7,12 @@ if (hamburgerMenu && navbar) {
     });
 }
 
-// Current Year and Last Modified
 const currentYear = new Date().getFullYear();
 document.getElementById('currentYear').textContent = currentYear;
 
 const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
 
-// Menu Data
 const menuItems = [
     {
         name: "Greek Salad",
@@ -24,42 +21,41 @@ const menuItems = [
     },
     {
         name: "Grilled Salmon",
-        image: "images/salad.jpg",
+        image: "images/salmon.jpg",
         description: "Perfectly grilled salmon with a side of quinoa."
     },
     {
         name: "Vegetarian Wrap",
-        image: "images/salad.jpg",
+        image: "images/wrap.jpg",
         description: "Loaded with fresh veggies and hummus."
     },
     {
         name: "Caprese Salad",
-        image: "images/salad.jpg",
+        image: "images/salad2.jpg",
         description: "Fresh mozzarella, tomatoes, and basil."
     },
     {
         name: "Avocado Toast",
-        image: "images/salad.jpg",
+        image: "images/toast.jpg",
         description: "Creamy avocado on whole-grain toast."
     },
     {
         name: "Chicken Caesar Salad",
-        image: "images/salad.jpg",
+        image: "images/cesar.jpg",
         description: "Classic Caesar salad with grilled chicken."
     },
     {
         name: "Pasta Primavera",
-        image: "images/salad.jpg",
+        image: "images/pasta.jpg",
         description: "Pasta with fresh seasonal vegetables."
     },
     {
         name: "Berry Smoothie Bowl",
-        image: "images/salad.jpg",
+        image: "images/berry.jpg",
         description: "A refreshing blend of berries and yogurt."
     }
 ];
 
-// Dynamically Add Menu Cards
 const menuGrid = document.getElementById('menu-grid');
 
 menuItems.forEach(item => {

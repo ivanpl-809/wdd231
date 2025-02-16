@@ -1,4 +1,3 @@
-// Hamburger Toggle
 const hamburgerMenu = document.getElementById('hamburger-menu');
 const navbar = document.getElementById('navbar');
 
@@ -8,7 +7,6 @@ if (hamburgerMenu && navbar) {
     });
 }
 
-// Current Year and Last Modified
 const currentYear = new Date().getFullYear();
 document.getElementById('currentYear').textContent = currentYear;
 

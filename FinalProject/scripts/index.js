@@ -1,4 +1,3 @@
-// Hamburger Toggle
 const hamburgerMenu = document.getElementById('hamburger-menu');
 const navbar = document.getElementById('navbar');
 
@@ -8,14 +7,12 @@ if (hamburgerMenu && navbar) {
     });
 }
 
-// Current Year and Last Modified
 const currentYear = new Date().getFullYear();
 document.getElementById('currentYear').textContent = currentYear;
 
 const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
 
-// Additional Interactivity for Featured Dishes
 const dishCards = document.querySelectorAll('.dish-card');
 dishCards.forEach(card => {
     card.addEventListener('mouseenter', () => {
