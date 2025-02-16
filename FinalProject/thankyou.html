@@ -6,21 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You - El Santo - Bistro & Salads</title>
     <link rel="icon" href="images/favicon.ico">
-    <meta name="description"
-        content="Thank you for your reservation at El Santo - Bistro & Salads. We look forward to serving you!">
+    <meta name="description" content="Thank you for your reservation at El Santo - Bistro & Salads.">
     <meta name="author" content="Ivan Ponce">
-    <meta property="og:title" content="Thank You - El Santo - Bistro & Salads">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://github.com/ivanpl-809/wdd231/tree/main/FinalProject/images/favicon.ico">
-    <meta property="og:url" content="https://ivanpl-809.github.io/wdd231/restaurant/thankyou.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="styles/thankyou.css">
-    <link rel="stylesheet" href="styles/thankyou-large.css">
-    <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/reservation.js" defer></script>
 </head>
 
 <body>
@@ -33,13 +22,8 @@
                 <h1>El Santo</h1>
                 <p>Bistro & Salads</p>
             </div>
-            <div class="hamburger-menu" id="hamburger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
         </div>
-        <nav class="header-right" id="navbar">
+        <nav class="header-right">
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
             <a href="location.html">Location & Hours</a>
@@ -50,14 +34,16 @@
     <main>
         <section class="thankyou">
             <h2>Thank You for Your Reservation!</h2>
-            <div class="reservation-details">
-                <p><strong>Name:</strong> <span id="reservation-name"></span></p>
-                <p><strong>Date:</strong> <span id="reservation-date"></span></p>
-                <p><strong>Time:</strong> <span id="reservation-time"></span></p>
-                <p><strong>Guests:</strong> <span id="reservation-guests"></span></p>
-                <p><strong>Reservation Number:</strong> <span id="reservation-number"></span></p>
-            </div>
-            <a href="index.html" class="cta-button">Back to Home</a>
+            <p>Here are your reservation details:</p>
+            <ul>
+                <li><strong>Name:</strong> <span id="name"></span></li>
+                <li><strong>Email:</strong> <span id="email"></span></li>
+                <li><strong>Date:</strong> <span id="date"></span></li>
+                <li><strong>Time:</strong> <span id="time"></span></li>
+                <li><strong>Number of Guests:</strong> <span id="guests"></span></li>
+                <li><strong>Order Number:</strong> <span id="orderNumber"></span></li>
+            </ul>
+            <p>We look forward to seeing you!</p>
         </section>
     </main>
 
@@ -65,7 +51,7 @@
         <div class="footer-content">
             <div class="footer-left">
                 <h3>El Santo - Bistro & Salads</h3>
-                <p>123 Main St, Timbuktu</p>
+                <p>1265 Alpine Ave, Boulder</p>
                 <p>Phone: (223) 555-1234</p>
                 <p>Email: info@elsanto.com</p>
             </div>
@@ -87,4 +73,5 @@
         </div>
     </footer>
 </body>
+
 </html>

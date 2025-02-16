@@ -83,6 +83,27 @@ nav a:hover {
     text-align: center;
 }
 
+.thankyou h2 {
+    font-size: 2rem;
+    color: #336342ec;
+    margin-bottom: 20px;
+}
+
+.thankyou ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.thankyou ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.thankyou ul li strong {
+    color: #336342ec;
+}
+
 .reservation-details {
     background-color: #f9f9f9;
     padding: 20px;
